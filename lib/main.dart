@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 44,
                     fontFamily: 'Inter-Bold',
-                    color: Color(0xff252EFF),
+                    color: Color(0xff3396D3),
                   ),
                 ),
               ),
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
                     hintText: 'Username',
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Color(0xff6066FF),),
+                        color: Color(0xff3396D3),),
                         borderRadius: BorderRadius.circular(30),
                     ),
                   ),
@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
                   decoration: InputDecoration(
                     hintText: 'Password',
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xff6066FF)),
+                      borderSide: BorderSide(color: Color(0xff3396D3)),
                       borderRadius: BorderRadius.circular(30),
                     ),
                   ), 
@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
                 height: 50,
                 width: 300,
                 decoration: BoxDecoration(
-                  color: Color(0xff252EFF),
+                  color: Color(0xff3396D3),
                   borderRadius: BorderRadius.circular(30),
                 ),
                 child: Center(
@@ -76,6 +76,32 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Don't have any account?",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontFamily: 'Inter-Medium',
+                    ),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    'Reister',
+                    style: TextStyle(
+                      fontSize: 20, 
+                      fontFamily: 'Inter-Medium',
+                      color: Color(0xff3396D3),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
