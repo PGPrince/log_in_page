@@ -10,17 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, 
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: SafeArea(
           child: Column(
             children: [
-              SizedBox(
-                height: 20,
-              ),
               Center(
                 child: Text(
-                  'Login',
+                  'Login', 
                   style: TextStyle(
                     fontSize: 44,
                     fontFamily: 'Inter-Bold',
@@ -29,60 +26,55 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 100,
+                height: 50,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
-                child: TextField(
+                child: TextFormField(
                   decoration: InputDecoration(
                     hintText: 'Username',
-                    fillColor: Color(0xffC2C2C2),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xff6066FF),),
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xff6066FF)),
-                      borderRadius: BorderRadius.circular(30),
-                      ),
+                      borderSide: BorderSide(
+                        color: Color(0xff6066FF),),
+                        borderRadius: BorderRadius.circular(30),
                     ),
                   ),
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 50,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
-                child: TextField(
+                child: TextFormField(
                   decoration: InputDecoration(
                     hintText: 'Password',
-                    fillColor: Color(0xffC2C2C2),
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Color(0xff6066FF)),
+                      borderRadius: BorderRadius.circular(30),
                     ),
-                  ),
+                  ), 
                 ),
               ),
               SizedBox(
-                height: 500,
+                height: 30,
               ),
               Container(
-                width: 350,
                 height: 50,
+                width: 300,
+                decoration: BoxDecoration(
+                  color: Color(0xff252EFF),
+                  borderRadius: BorderRadius.circular(30),
+                ),
                 child: Center(
                   child: Text(
-                    'LOGIN',
+                    'LOGIN', 
                     style: TextStyle(
-                      fontSize: 15,
+                      fontSize: 25,
                       fontFamily: 'Inter-Medium',
                       color: Color(0xffFFFFFF),
                     ),
                   ),
-                ),
-                decoration: BoxDecoration(
-                  color: Color(0xff252EFF),
-                  borderRadius: BorderRadius.circular(20),
                 ),
               ),
             ],
